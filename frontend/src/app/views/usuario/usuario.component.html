@@ -1,0 +1,28 @@
+<div id="all">
+    <br>
+    <div class="container">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar por nombre">
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button" onclick="findByName()"> Buscar </button>
+            </div>
+        </div>
+
+        <div class="row" *ngFor="let book of books">
+
+            <div class="col-4">
+                <img src="assets/images/imgEmpleados/imgLibros/libro.jpg" alt="" width="120" height="150">
+            </div>
+    
+            <div class="col-8">
+                <p style="margin-bottom: 0%;">Titulo:</p>
+                <p>{{ book.nombre }}</p>
+                <p style="margin-bottom: 0%;">Autor:</p>
+                <p>{{ book.autor }}</p>
+                <p>{{ book.descripcion }}</p>
+            </div>
+            
+        </div>
+
+    </div>
+</div>

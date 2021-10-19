@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 style="text-align: center;">Menu</h1><br>
+    <div class="row" *ngFor="let book of books" style="border-block-end: double;">
+
+        <div class="col-4">
+            <img src="assets/images/imgEmpleados/imgLibros/libro.jpg" alt="" width="120" height="150">
+        </div>
+
+        <div class="col-8">
+            <p style="margin-bottom: 0%;">Titulo:</p>
+            <p>{{ book.nombre }}</p>
+            <p style="margin-bottom: 0%;">Autor:</p>
+            <p>{{ book.autor }}</p>
+            <p>{{ book.descripcion }}</p>
+        </div>
+        
+    </div>
+</div>

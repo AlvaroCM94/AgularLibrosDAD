@@ -1,0 +1,13 @@
+<div *ngIf="urlActual=='Login' || urlActual=='Inicio' || urlActual=='Conocenos' || urlActual=='Contacto'"> 
+    <app-menu id="menu1"></app-menu> 
+</div>
+
+<!-- <div *ngIf="authService.isLoggedIn$ | async"> 
+    <app-menu-user id="menu2"></app-menu-user> 
+</div> -->
+
+<div *ngIf="urlActual=='Usuario' || urlActual=='Cancelados' || urlActual=='Hechos' || urlActual=='Configuracion'"> 
+    <app-menu-user id="menu2"></app-menu-user> 
+</div>
+
+<router-outlet> </router-outlet>
