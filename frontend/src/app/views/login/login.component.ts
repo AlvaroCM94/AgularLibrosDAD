@@ -19,8 +19,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  submitForm() {
+  submitForm(){
     if (this.form.invalid) {
+      alert("Credenciales no validas");
       return;
     }
 

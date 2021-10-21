@@ -22,8 +22,11 @@ export class UsuarioComponent implements OnInit {
     }
   }
 
-  findByName(){
-    
+  findByName(name: string){
+    this.bookService.getBookByName(name).subscribe((response) => {
+      //this.books = response;
+      this.loadInfo();
+    })
   }
 
   loadInfo(){

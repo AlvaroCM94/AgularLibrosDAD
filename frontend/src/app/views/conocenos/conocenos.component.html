@@ -7,34 +7,23 @@
     <h5>Version 0.5</h5><br><br><br>
 
     <div id="demo" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/images/imgEmpleados/CEO.png" alt="" width="350" height="350">
-                <div class="carousel-caption">
-                  <h3>Alvaro</h3>
-                  <p>CEO</p>
-                </div>
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <img src="{{ empleados[0].imagen }}" alt="" width="350" height="350">
+            <div class="carousel-caption">
+              <h3>{{ empleados[0].nombre }}</h3>
+              <p>{{ empleados[0].descripcion }}</p>
             </div>
-            <div class="carousel-item">
-                <img src="assets/images/imgEmpleados/empleada.png" alt="" width="350" height="350">
-                <div class="carousel-caption">
-                  <h3>Ana</h3>
-                  <p>Programadora senior</p>
-                </div>   
+          </div> 
+
+          <div class="carousel-item " *ngFor="let empleado of empleados | slice:1; let i = index;">
+            <img src="{{ empleado.imagen }}" alt="" width="350" height="350">
+            <div class="carousel-caption">
+              <h3>{{ empleado.nombre }}</h3>
+              <p>{{ empleado.descripcion }}</p>
             </div>
-            <div class="carousel-item">
-                <img src="assets/images/imgEmpleados/empleado.png" alt="" width="350" height="350">
-                <div class="carousel-caption">
-                  <h3>Juan</h3>
-                  <p>Analista</p>
-                </div>   
-            </div>
+          </div>
         </div>
 
         <a class="carousel-control-prev" href="#demo" data-slide="prev">

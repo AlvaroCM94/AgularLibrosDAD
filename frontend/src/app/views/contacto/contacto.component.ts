@@ -12,4 +12,8 @@ export class ContactoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  alerta(){
+    alert("Consulta enviada");
+  }
+
 }

@@ -2,9 +2,9 @@
     <br>
     <div class="container">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Buscar por nombre">
+            <input id="name" type="text" class="form-control" placeholder="Buscar por nombre">
             <div class="input-group-append">
-                <button class="btn btn-secondary" type="button" onclick="findByName()"> Buscar </button>
+                <button class="btn btn-secondary" type="button" ng-click="findByName(document.getElementById('name').value)"> Buscar </button>
             </div>
         </div>
 

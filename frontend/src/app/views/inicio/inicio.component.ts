@@ -9,7 +9,7 @@ import { BookService } from 'src/app/services/books.service';
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.scss']
 })
-export class InicioComponent implements OnInit {
+export class InicioComponent implements OnInit{
 
   public books: Array<Book> = [];
   //books: any = [];

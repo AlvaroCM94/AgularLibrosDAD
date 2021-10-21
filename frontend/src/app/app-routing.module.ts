@@ -11,6 +11,7 @@ import { PedidosHechosComponent } from './views/pedidos-hechos/pedidos-hechos.co
 import { UsuarioComponent } from './views/usuario/usuario.component';
 
 const routes: Routes = [
+  { path: '',      component: InicioComponent },
   { path: 'Inicio',      component: InicioComponent },
   { path: 'Conocenos',      component: ConocenosComponent },
   { path: 'Contacto',      component: ContactoComponent },

@@ -1,4 +1,4 @@
-<div *ngIf="urlActual=='Login' || urlActual=='Inicio' || urlActual=='Conocenos' || urlActual=='Contacto'"> 
+<div *ngIf="urlActual=='' || urlActual=='Login' || urlActual=='Inicio' || urlActual=='Conocenos' || urlActual=='Contacto'"> 
     <app-menu id="menu1"></app-menu> 
 </div>
 
@@ -10,4 +10,4 @@
     <app-menu-user id="menu2"></app-menu-user> 
 </div>
 
-<router-outlet> </router-outlet>
+<router-outlet></router-outlet>

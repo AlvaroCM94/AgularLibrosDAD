@@ -42,6 +42,13 @@ export class BookService {
       catchError(this.handleError<Book[]>("Get book", []))
     );
   }
+
+  getBookByName(nombre: string): Observable<Book>{
+    return this.httpClient.get<Book>(this.endpoint).pipe(
+      tap(_ => console.log(`Book fetched: ${nombre}`)),
+      catchError(this.handleError<Book>(`Get Book name=${nombre} no encontrado`))
+    );
+  }
   /*
   getBookById(id: number): Observable<Book>{
     return this.httpClient.get<Book>(this.endpoint + "/" + id).pipe(

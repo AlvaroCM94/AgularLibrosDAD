@@ -5,7 +5,7 @@ export class Book {
     disponibilidad: boolean;
     descripcion: string;
 
-    constructor(id: number, nombre: string, autor: string, disponiblidad: boolean, descripcion: string) { 
+    constructor(id: number, nombre: string, autor: string, disponiblidad: boolean, descripcion: string){
         this.id = id;
         this.nombre = nombre;
         this.autor = autor;
